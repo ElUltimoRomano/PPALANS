@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPALANS</title>
+</head>
+
+<body>
+    <header>
+        <div id="navbar"></div>
+        <!-- Titulo de la marca -->
+        <Section class="Titulos">
+            <H1 class="Nombre_marca">PPALANS</H1>
+            <H3 class="Eslogan">Lujo que se nota, no que grita</H3>
+        </Section>
+        <!-- Boton -->
+         <div class="Boton_Compra">
+            <a href="Tienda.html" class="BtnCompra">COMPRAR</a>
+        </div>
+         
+    </header>
+    <section class="Pagina">
+            <article class="Opciones">
+                <div class="seccion Dama">
+                    <h1 class="TxtDama">Dama</h1>
+                </div>
+                <div class="seccion Caballero">
+                    <h1 class="TxtCaballero">Caballero</h1>
+                </div>
+            </article>
+            <article class="Quienes_somos">
+                <div class="TTL" id="titulo">¿Quienes somos?</div>
+                <div class="Vision Tarjeta">
+                    <div class="TTL">Vision </div>
+                    <div class="TXT">  convertirnos en una marca global de referencia en moda formal-casual, reconocida por ofrecer prendas con estilo, elegancia, calidad premium y ofreciendo estatus con ella misma, accesibles sin comprometer la distinción. Aspirando a posicionarnos en el sector del lujo discreto, redefiniendo el estatus moderno con una propuesta sofisticada, funcional y atemporal. Nuestro objetivo es vestir a personas con ambición, carácter y buen gusto en todo el mundo, creando una comunidad que valore el diseño con intención y el prestigio auténtico, sin excesos
+                    </div>  
+                </div>
+                <div class="Mision Tarjeta"> 
+                    <div class="TTL Mision">Mision </div>
+                    <div class="TXT">
+                        Nuestra misión es ofrecer ropa formal-casual que combine la elegancia, la comodidad y estilo con un diseño discreto pero sofisticado, elevando la presencia personal de nuestros clientes sin necesidad de ostentación nos gusta enfocamos en brindar prendas que transmitan estatus real a través de la calidad, el corte y los detalles, accesibles para quienes valoran la distinción auténtica en su día a día y sin perder la comodidad y elegancia
+                    </div>
+                </div>
+                <div class="Valores Tarjeta"> 
+                    <div class="TTL">Valores </div>
+                    <div class="TXT">
+                        <ul>
+                            <li>Exclusividad</li>
+                            <li>Perfección </li>
+                            <li>Lujo silencioso</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+         <hr>
+    </section>
+    <footer>
+        <section>
+            <article>
+                <div class="Contacto">
+                    <div class="Boton_logo" id="Facebook"></div>
+                    <div class="Boton_logo" id="Instagram"></div>
+                    <div class="Boton_logo" id="Tiktok"></div>
+                </div>
+                <div id="">Contactanos <br> copyright 2025</div>
+              
+            </article>
+        </section>
+    </footer>
+    
+</body>
+ <script>
+    fetch("Barra_Default.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("navbar").innerHTML = data);
+  </script>
+</html>

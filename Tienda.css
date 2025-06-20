@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100vw;
+}
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #ffffff;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#navbar{
+    width: 100vw;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.Barra {
+     position: fixed;
+    top: 1rem;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    
+  
+}
+
+.Btn_Barra {
+    padding: 0;
+    width: 10rem;        
+    height: 3rem;
+    font-size: 1.2rem;
+    background-color: #ffffffb9 ;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Cuerpo------------------------------------ */
+.Fila_ropa {
+  padding-top: 10rem;
+  display: flex;         
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;        
+}
+
+.Art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 50%;          
+  background-color: #f0f0f0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+   transition: transform 0.8s ease;
+}
+
+
+
+.Art .Descrip {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.Img{
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 0;
+    background-image: url("Content/Styles/Imagenes/Modelo\ de\ Camiseta.avif");
+    background-size:cover ;        
+    background-position: center;
+    background-repeat: no-repeat  
+}
+.Art .Precio {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  width: 100%;
+}
+.Colores {
+  display: flex;
+  gap: 8px;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.Color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.Color:hover {
+  transform: scale(1.2);
+}
+/* PIE DE PAGINA */
+footer{
+  padding-top: 5rem;
+    text-align: center;
+    min-height: 10vh;
+}
+
+.Contacto{
+    display: flex;
+    flex-direction: row;
+    justify-items:center;
+}
+#Facebook{
+    background-image: url(Content/Styles/Imagenes/Facebook.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+#Instagram{
+    background-image: url(Content/Styles/Imagenes/Instagram.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Tiktok{
+    background-image: url(Content/Styles/Imagenes/tiktok.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Boton_logo{
+    height: 4rem;
+    width: 4rem ;
+}
+/* ANIMACIONES */
+@media (max-width: 1300px) {
+  .Barra {
+    display: none;
+  }
+  .Fila_ropa{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .Img,.Art{
+    width: 100%;
+
+  }
+  .Art{
+    padding-top: 0;
+  }
+
+}
+
+.Btn_Barra:hover, .Art:hover{
+    background-color: rgb(181, 181, 181);
+    color: white;
+    transition: background-color 0.8s ease;
+    transition: color 0.7s ease;
+    z-index: 1; 
+    transform: scale(1.1);
+}
+

@@ -1,0 +1,15 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    margin: 0;
+    background-color: #ffffff;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
